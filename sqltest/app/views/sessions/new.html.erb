@@ -1,0 +1,7 @@
+<%= flash[:notice] %>
+
+<%= form_for(:form_login, url: { action: 'create' }) do |f| %>
+  <p><%= f.text_field(:username, :size => 40, :placeholder => "Username") %></p>
+  <p><%= f.text_field(:email, :size => 40, :placeholder => "Email") %></p>
+  <p><%= f.submit 'Log In' %></p>
+<% end %>
